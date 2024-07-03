@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Antillana Comercial</title>
+  <link rel="stylesheet" href="./src/estilos.css">
+  <link rel="shortcut icon" href="./src/favicon.ico" />
+</head>
+<body>
+  <header class="encabezado">
+	<a href="../agenda/"><img src="./src/logo.png" alt="Logo del Instituto Cultural Dominico Americano"/></a>
+    <div id="agenda"><h2>Extensiones Telefonicas</h2></div>
+    <form>
+      <input type="text" id="busqueda" placeholder="Buscar Contacto">
+	  <a href="../kg/"><img src="./src/keypass.png" alt="Generar Contraseña" class="keyp"/></a>
+    </form>
+  </header>
+  <table>
+    <thead>
+      <tr>
+        <th>Extensión</th>
+        <th>Nombre</th>
+        <th>Departamento</th>
+        <th>Cargo</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpo-tabla">
+    </tbody>
+  </table>
+  <script src="./src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+﻿Extensión,Nombre,Departamento,Cargo
+2101,Ramon Sosa,Dirección General,Director General
+2102,Secretaria,Dirección General,Secretaria Director Gral
+2103,Vilma Quiñonez,Asistente Ejecutiva,Asistente Ejecutiva
+2104,Marleny Perez,UNICDA,Coordinación Calidad
+2110,Office Ejecutiva,Dirección General,Dirección General
+2130,Salon Reuniones,Dirección General,Salón Reuniones
+2201,Alicia Carlo,Comunicaciones,Directora de Comunicaciones
+2202,Maribel Espinal,Comunicaciones,Secretaria  Comunicaciones
+2203,Eliana Sanchez,Comunicaciones,Asistente Comunicación Junior
+2204,Shirlene Guerrero,Comunicaciones,Coordinación Mercadeo
+2205,Temporero - Uneica Rodriguez,Comunicaciones,Call Center Agente 
+2206,Esteban Estrella,Comunicaciones,Esteban Estrella
+2207,Michelle Mártire,Comunicaciones,Asistente Comunicación Mercadeo
+2208,Caroline Hasset,Comunicaciones,Caroline Hasset
+2209,Agente Angelica Medrano ,Comunicaciones,Call Center Agente 
+2210,Extn2210,Comunicaciones,Extn2210
+2211,Extn2211,Comunicaciones,Extn2211
+2301,Rosa Bobea,Finanzas,Directora Finanzas
+2302,Jessica Cuevas,Finanzas,Asistente Finanzas
+2310,Johanne Duarte,Finanzas,Contador General
+2311,George Samiler Castillo,Finanzas,Sub Contador
+2312,Kevin Ureña,Finanzas,Auxiliar Contabilidad
+2313,Asist-Contabili,Finanzas,Asistente Contabilidad
+2314,Juan Barrera,Finanzas,Activo Fijo
+2315,2315-AsistIngre,Finanzas,Asistente Ingreso
+2320,Cobros - Disponible,Finanzas,Encargada de Cobros
+2321,Nancy Rivera,Finanzas,Asistente Cobros
+2322,Victor Robles,Finanzas,Asistente Cobros II
+2330,Belkis Padilla,Registros,Caja General
+2331,Cajero,Registros,Cajero
+2340,Rafael Castillo,Tecnologia,Gerente Tecnología
+2341,Layoner Martinez Nivar,Tecnologia,Desarrollo
+2342,Daniel Perez,Tecnologia,Coordinador de Desarrollo
+2343,Enmanuel Grullard,Tecnologia,Desarrollo
+2344,Mesa de Ayuda,Tecnologia,Help Desk
+2345,Franklin Stubbs,Tecnologia,Help Desk
+2346,Marcos Rodriguez,Tecnologia,Help Desk
+2347,Carlos David Báez,Tecnologia,Coordinador Infraestructura
+2401,Vilma Sosa,RRHH,Dirección RRHH
+2402,Joselito Roa,RRHH,Secretario RRHH
+2403,Maria José,RRHH,Reclutamiento y Selección
+2404,Cristina Figueroa,RRHH,Registro y Control
+2410,Anyeli León,RRHH,Encargada Nomina
+2411,Yeniffer & Ana,RRHH,Asistente Nomina
+2501,Eddy Peralta,Servicios Administrativos,Director Servicios Administrativo
+2502,Ordalisa Mateo,Servicios Administrativos,Asistente de Compra
+2503,Sindy Bello,Servicios Administrativos,Asistente de Compra
+2504,Magdeline Linares Linarez,Extensiones,Auxiliar de Compra
+2510,Raquel Melian,Servicios Administrativos,Encargada de Compra
+2520,Luis Ramírez | Luis Rodriguez,Servicios Administrativos,Encargada Seguridad
+2521,Emilio Sanchez,Servicios Administrativos,Seguridad Recepción
+2530,Tatiana Cruz,Servicios Administrativos,Coordinadora de Proyectos
+2531,Eliberto Rosario Perez,Servicios Administrativos,Encargado Mantenimiento
+2540,Rosseily Savinon,Servicios Administrativos,Encargada Archivos
+2550,Oneida Alcantara,Servicios Administrativos,Encargada Libreria
+2560,Wilson Montesino,Servicios Administrativos,Encargado Almacen
+2570,Unidad Medica,ICDA,ICDA | Unidad Medica
+2580,Agente Glenis Aybar,Comunicaciones,Call Center Agente 
+2581,Vanessa Linares,Comunicaciones,Call Center Agente 
+2582,Ana Cuello,Comunicaciones,Call Center Agente 
+2583,Rocio Santos,Comunicaciones,Call Center Agente 
+2584,Agente Yunior Ventura,Comunicaciones,Call Center Agente 
+2585,Pamela Linares,Comunicaciones,Call Center Agente 
+2587,Agente Francisco Mayi,Comunicaciones,Call Center Agente 
+2588,Agente Rosangela Guante,Comunicaciones,Call Center Supervisora 
+2589,Agent 2589,Registros,Registro Temporal 05
+2590,Agent 2590,Registros,Registro Temporal 06
+2591,Agent 2591,Registros,Registro Temporal 07
+2592,Call Center,Comunicaciones,
+2593,Call Center,Comunicaciones,
+2594,Call Center,Comunicaciones,
+2595,Call Center,Comunicaciones,
+2596,Call Center,Comunicaciones,
+2601,Juana Evangelista Sosa,Auditoria,Auditor Interno
+2602,Asist-Auditoria,Auditoria,Asist-Auditoria
+2603,Asist Auditoria,Auditoria,Asistente Auditoria
+2701,Dir-Cultural,Cultural,Director Cultural
+2702,Sec-Cultural,Cultural,Sec-Cultural
+2703,Auditorio,Auditorio,Auditorio
+3000,Help Desk,Tecnologia,Mesa de Ayuda
+3001,Francy Romero,Tecnologia,Dir. Tecnologia
+3002,Rafael Castillo,Tecnologia,Enc. Tecnologia
+3003,Daniel Perez,Tecnologia,Enc. Desarrollo
+3004,Carlos David Báez,Tecnologia,Coordinador Infraestructura
+3010,Layoner Martinez Nivar,Tecnologia,Desarrollador Sr.
+3011,Enmanuel Grullard,Tecnologia,Desarrollador Jr.
+3012,Jose Joel Reyes Franco,Tecnologia,Contenido Digital Web
+3013,Franklin Stubbs,Tecnologia,Soporte Sr.
+3014,Marcos Rodriguez,Tecnologia,Soporte Sr.
+3015,Tiffany Feliz,Tecnologia,Mesa de Ayuda
+3101,Dir-Academica,Academica,Directora Academica
+3110,Coord Evaluacio,Academica,Coord Evaluacion
+3120,Asesoria-Estudi,Academica,Asesoria Estudiantil
+3121,Becas,Comunicaciones,Becas
+3122,Education USA,ECO,
+3130,Enc Registro,Registros,Encargado Registro
+3132,Unicda Registro,UNICDA,Unicda Registro
+3133,Yirandis Manon,Registros,Supervisor Registro
+3134,Asist Registro,Registros,Asist Registro
+3140,Ilonka Suarez,Registros,Coordinador Registro
+3150,Director Registro,,
+3201,Robert Valcin,Escuela de Edioma,Dirección Escuela de Edioma
+3202,Sec-EDI,Escuela de Edioma,Secretaria Escuela de Edioma
+3203,Asist-Extension,Escuela de Edioma,Asistente Extension
+3204,Coord Especial,Escuela de Edioma,Coordinador Especializados EDI
+3205,Sup-Academicos,Escuela de Edioma,Supervisor Academicos
+3206,Teacher Room,Escuela de Edioma,Teacher Room
+3207,Coord-Junior,Escuela de Edioma,Coord-Junior
+3210,Coord-Mescyt,Escuela de Edioma,Coord-Mescyt
+3220,Gledis Libert,Escuela de Edioma,Coordinador Adultos
+3230,Ingrid Severino,Escuela de Edioma,Coordinador Administrativa EDI
+3231,Sup-Playful,Escuela de Edioma,Sup-Playful
+3240,Coord-Español,Escuela de Edioma,Coord-Español
+3301,Linda Mauad,Colegio,Dirección Colegio
+3302,Sec-Colegio,Colegio,Secretario Colegio
+3303,Asist-Colegio,Colegio,Asistente Colegio
+3304,Psicologa,Colegio,Psicologa
+3305,Ofc-Disciplina,Colegio,Oficina de Disciplina
+3306,Psicologa2,Colegio,Psicologa2
+3308,Sec Docente,Colegio,Secretari@ Docente
+3309,Middle-School,Colegio,Middle School Principal
+3310,Sup-Bachillerat,Colegio,Supervisor Bachillerato
+3311,Sec-Bachillerat,Colegio,Secretari@ Bachillerato
+3320,Sup-Primaria,Colegio,Supervisor Primaria
+3321,Ofic-Primaria,Colegio,Oficina de Asistente Primaria
+3330,Enc-Actividades,Colegio,Encarad@ Actividades
+3401,Karlans Camacho,Colegio,Karlans Camacho
+3402,Sec-UNICDA,UNICDA,Secretari@ UNICDA
+3403,Orient-UNICDA,UNICDA,Orientadora UNICDA
+3404,Enc-Admisiones,UNICDA,Enc-Admisiones
+3405,Asist UNICDA,UNICDA,Asistente UNICDA
+3410,Coord-Sistema,UNICDA,Coord-Sistema
+3420,Coord-Negocios,UNICDA,Coord-Negocios
+3430,Coord-Ingles,UNICDA,Coord-Ingles
+3440,Alejandra Brunet,UNICDA,Coord-Turismo
+3450,3450-coorMIngle,UNICDA,Coordinador Maestria Ingles
+3460,3460-coodMNegoc,UNICDA,Coordinadores Maestria Negocios
+3470,3470-UNI_Karina,Extensiones,Extensión y Vinculación Social
+3480,Sec EduCon,UNICDA,Sec EduCon
+3481,Miguelina Puello,Comunicaciones,Call Center Agente 
+3482,Agente William Cuevas,Comunicaciones,Call Center Agente 
+3483,Asist Admisione,Comunicaciones,Asist Admisiones
+3484,3484-EduContLog,Comunicaciones,EduCont Logistica
+3485,Suniel Perez,Comunicaciones,Call Center Agente 
+3486,Violeta Encarnacion,Comunicaciones,Call Center Agente 
+3487,Nicole Baldallaque,Comunicaciones,Call Center Agente 
+3488,Asist Culinario,Educon,Asist Culinario
+3489,Cocina Educon,Educon,Educon | Cocina Educon
+3501,Coord-Preescola,Preescolar,Coordinador/a Preescolar
+3502,Sec-Preescolar,Preescolar,Secretari@ Preescolar
+3601,Nelida Cairo,Biblioteca,Directora Biblioteca
+3602,BibSecretaria,Biblioteca,Secretaria biblioteca
+3603,3603-Bibformaci,Biblioteca,Formación biblioteca
+3610,CRA,Extensiones,CRA
+4101,ZO-Administ,Extensiones,Zona Oriental - Administrativo
+4102,ZO-Academico,Extensiones,Zona Oriental - Academico
+4202,Ext ROM,Extensiones,Romana
+4301,Ext SPM Sup,Extensiones,San Pedro de Macoris - Supervisor | SPM
+4302,SPM-Academico,Extensiones,San Pedro de Macoris - Academico
+4401,SFM-Administ,Extensiones,San Francisco de Macoris Administrativo
+4403,SFM-Caja,Extensiones,San Francisco de Macoris - Caja
+4501,Ext ROM Adminis,Extensiones,Romana - Administrativo
+4502,Ext ROM Sup Aca,Extensiones,Romana - Supervisor Academico
+4503,Ext ROM Caja,Extensiones,Romana - Caja | ROM
+4601,GH-Administrati,Extensiones,Gregorio Hernandez -  Administrativo
+4602,GH Academico,Extensiones,Gregorio Hernandez -  Coordinador Academico
+4701,HY-Administrati,Extensiones,Hato Mayor - Administrativo
+4801,Academico JMM,Extensiones,Academico JMM
+4901,Lioanny Cuello Reyes,Extensiones,BANI
+4902,Bani - Caja,Extensiones,BANI
+4903,Bani - Academico,Extensiones,BANI
+5001,Ext Calasanz,Extensiones,Calasanz
+7500,ACCS SIP-Ext,,
+809-562-6767,Farmacia Carol,Telefono,Externo
