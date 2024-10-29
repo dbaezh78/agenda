@@ -1,0 +1,1147 @@
+Microsoft Windows [Version 10.0.17763.6293]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>dcdiag /v
+
+Directory Server Diagnosis
+
+Performing initial setup:
+   Trying to find home server...
+   * Verifying that the local machine dc01, is a Directory Server.
+   Home Server = dc01
+   * Connecting to directory service on server dc01.
+   * Identified AD Forest.
+   Collecting AD specific global data
+   * Collecting site info.
+   Calling ldap_search_init_page(hld,CN=Sites,CN=Configuration,DC=laantillana,DC=local,LDAP_SCOPE_SUBTREE,(objectCategory=ntDSSiteSettings),.......
+   The previous call succeeded
+   Iterating through the sites
+   Looking at base site object: CN=NTDS Site Settings,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local
+   Getting ISTG and options for the site
+   * Identifying all servers.
+   Calling ldap_search_init_page(hld,CN=Sites,CN=Configuration,DC=laantillana,DC=local,LDAP_SCOPE_SUBTREE,(objectClass=ntDSDsa),.......
+   The previous call succeeded....
+   The previous call succeeded
+   Iterating through the list of servers
+   Getting information for the server CN=NTDS Settings,CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local
+   objectGuid obtained
+   InvocationID obtained
+   dnsHostname obtained
+   site info obtained
+   All the info for the server collected
+   Getting information for the server CN=NTDS Settings,CN=DC02,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local
+   objectGuid obtained
+   InvocationID obtained
+   dnsHostname obtained
+   site info obtained
+   All the info for the server collected
+   * Identifying all NC cross-refs.
+   * Found 2 DC(s). Testing 1 of them.
+   Done gathering initial info.
+
+Doing initial required tests
+
+   Testing server: Antillana-std\DC01
+      Starting test: Connectivity
+         * Active Directory LDAP Services Check
+         Determining IP4 connectivity
+         * Active Directory RPC Services Check
+         ......................... DC01 passed test Connectivity
+
+Doing primary tests
+
+   Testing server: Antillana-std\DC01
+      Starting test: Advertising
+         The DC DC01 is advertising itself as a DC and having a DS.
+         The DC DC01 is advertising as an LDAP server
+         The DC DC01 is advertising as having a writeable directory
+         The DC DC01 is advertising as a Key Distribution Center
+         The DC DC01 is advertising as a time server
+         The DS DC01 is advertising as a GC.
+         ......................... DC01 passed test Advertising
+      Test omitted by user request: CheckSecurityError
+      Test omitted by user request: CutoffServers
+      Starting test: FrsEvent
+         * The File Replication Service Event log test
+         Skip the test because the server is running DFSR.
+         ......................... DC01 passed test FrsEvent
+      Starting test: DFSREvent
+         The DFS Replication Event Log.
+         There are warning or error events within the last 24 hours after the SYSVOL has been shared.  Failing SYSVOL replication problems may cause Group Policy problems.
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/28/2024   08:09:56
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: A15DC53F-F5B9-481B-8378-890DC0E91B89
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/28/2024   10:57:00
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: F832827F-D37A-47D1-AED3-1F2B5155E5A9
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/28/2024   11:08:43
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: F832827F-D37A-47D1-AED3-1F2B5155E5A9
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/28/2024   11:13:41
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: F832827F-D37A-47D1-AED3-1F2B5155E5A9
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   11:14:35
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: F832827F-D37A-47D1-AED3-1F2B5155E5A9
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   11:14:35
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: F832827F-D37A-47D1-AED3-1F2B5155E5A9
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/28/2024   14:43:48
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: C8D92964-7370-46ED-B8C2-FDC4FB6C9634
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   14:44:43
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: C8D92964-7370-46ED-B8C2-FDC4FB6C9634
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   14:44:43
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: C8D92964-7370-46ED-B8C2-FDC4FB6C9634
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   14:51:31
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: C8D92964-7370-46ED-B8C2-FDC4FB6C9634
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   14:51:31
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: C8D92964-7370-46ED-B8C2-FDC4FB6C9634
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   15:07:53
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: C8D92964-7370-46ED-B8C2-FDC4FB6C9634
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   15:07:53
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: C8D92964-7370-46ED-B8C2-FDC4FB6C9634
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   15:59:58
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 3D96FBFE-A81D-432A-A10A-EE9D42640F75
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   15:59:58
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 3D96FBFE-A81D-432A-A10A-EE9D42640F75
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   16:07:37
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 3D96FBFE-A81D-432A-A10A-EE9D42640F75
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   16:07:37
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 3D96FBFE-A81D-432A-A10A-EE9D42640F75
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   16:23:59
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 3D96FBFE-A81D-432A-A10A-EE9D42640F75
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   16:23:59
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 3D96FBFE-A81D-432A-A10A-EE9D42640F75
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   16:39:42
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 412EFBD5-9E5D-43E9-A1EE-5ED6A18BD88D
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   16:39:42
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 412EFBD5-9E5D-43E9-A1EE-5ED6A18BD88D
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   16:47:20
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 412EFBD5-9E5D-43E9-A1EE-5ED6A18BD88D
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   16:47:20
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 412EFBD5-9E5D-43E9-A1EE-5ED6A18BD88D
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   17:03:42
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 412EFBD5-9E5D-43E9-A1EE-5ED6A18BD88D
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   17:03:42
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 412EFBD5-9E5D-43E9-A1EE-5ED6A18BD88D
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC00004B2
+            Time Generated: 10/28/2024   18:04:53
+            Event String:
+            The DFS Replication service failed to contact domain controller  to access configuration information. Replication is stopped. The service will try again during the next configuration polling cycle, which will occur in 60 minutes. This event can be caused by TCP/IP connectivity, firewall, Active Directory Domain Services, or DNS issues.
+
+            Additional Information:
+            Error: 160 (One or more arguments are not correct.)
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   18:12:50
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 1BD747CB-8306-4C39-84C9-71981CEEEAB3
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   18:12:50
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 1BD747CB-8306-4C39-84C9-71981CEEEAB3
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   18:20:28
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 1BD747CB-8306-4C39-84C9-71981CEEEAB3
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   18:20:28
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 1BD747CB-8306-4C39-84C9-71981CEEEAB3
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   18:31:54
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: CC33BE4A-DB3D-42E5-8217-359E60DC843D
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   18:31:54
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: CC33BE4A-DB3D-42E5-8217-359E60DC843D
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   18:39:33
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: CC33BE4A-DB3D-42E5-8217-359E60DC843D
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   18:39:33
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: CC33BE4A-DB3D-42E5-8217-359E60DC843D
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   18:44:41
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 22EC9AFE-17CB-410F-A3C4-A492DDE5964C
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   18:44:41
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 22EC9AFE-17CB-410F-A3C4-A492DDE5964C
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   18:52:20
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: 22EC9AFE-17CB-410F-A3C4-A492DDE5964C
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   18:52:20
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: 22EC9AFE-17CB-410F-A3C4-A492DDE5964C
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   19:02:57
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: B94B4107-FA15-44A3-82B4-8D4F2E51C3B4
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   19:02:57
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: B94B4107-FA15-44A3-82B4-8D4F2E51C3B4
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   19:10:36
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: B94B4107-FA15-44A3-82B4-8D4F2E51C3B4
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   19:10:36
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: B94B4107-FA15-44A3-82B4-8D4F2E51C3B4
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   19:26:58
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: B94B4107-FA15-44A3-82B4-8D4F2E51C3B4
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   19:26:58
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: B94B4107-FA15-44A3-82B4-8D4F2E51C3B4
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   20:14:39
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: A77496ED-DEA3-477F-B460-F04B802072B9
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   20:14:39
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: A77496ED-DEA3-477F-B460-F04B802072B9
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   20:22:17
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: A77496ED-DEA3-477F-B460-F04B802072B9
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   20:22:17
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: A77496ED-DEA3-477F-B460-F04B802072B9
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         An error event occurred.  EventID: 0xC0001390
+            Time Generated: 10/28/2024   20:38:40
+            Event String:
+            The DFS Replication service failed to communicate with partner dc02 for replication group Domain System Volume. This error can occur if the host is unreachable, or if the DFS Replication service is not running on the server.
+
+            Partner DNS Address: dc02.laantillana.local
+
+            Optional data if available:
+            Partner WINS Address: dc02
+            Partner IP Address: 172.16.4.46
+
+            The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 1722 (The RPC server is unavailable.)
+            Connection ID: A77496ED-DEA3-477F-B460-F04B802072B9
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         An error event occurred.  EventID: 0xC0001204
+            Time Generated: 10/28/2024   20:38:40
+            Event String:
+            The DFS Replication service initialized SYSVOL at local path C:\WINDOWS\SYSVOL\domain and is waiting to perform initial replication. The replicated folder will remain in the initial synchronization state until it has replicated with its partner dc02.laantillana.local. If the server was in the process of being promoted to a domain controller, the domain controller will not advertise and function as a domain controller until this issue is resolved. This can occur if the specified partner is also in the initial synchronization state, or if sharing violations are encountered on this server or the sync partner. If this event occurred during the migration of SYSVOL from File Replication service (FRS) to DFS Replication, changes will not replicate out until this issue is resolved. This can cause the SYSVOL folder on this server to become out of sync with other domain controllers.
+
+            Additional Information:
+            Replicated Folder Name: SYSVOL Share
+            Replicated Folder ID: 9F1BF672-6C62-4947-99A8-F426B1700E92
+            Replication Group Name: Domain System Volume
+            Replication Group ID: A77496ED-DEA3-477F-B460-F04B802072B9
+            Member ID: 1546DCCA-5412-40B9-AE4C-D0B481FE01DF
+            Read-Only: 0
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/28/2024   20:48:49
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: A77496ED-DEA3-477F-B460-F04B802072B9
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/28/2024   21:34:54
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: A6B8DADB-1782-47F4-A130-46D328C6A586
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/29/2024   01:35:03
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: 011AB2EA-1FBA-4103-AD64-727CFC136E3F
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/29/2024   05:35:11
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: 6DBBD795-909C-4B49-AFAE-3D641E026340
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/29/2024   07:16:20
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: 1B4946FA-67A3-4A60-B6E5-2D95E325977F
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         A warning event occurred.  EventID: 0x80001396
+            Time Generated: 10/29/2024   07:23:03
+            Event String:
+            The DFS Replication service is stopping communication with partner dc02 for replication group Domain System Volume due to an error. The service will retry the connection periodically.
+
+            Additional Information:
+            Error: 9033 (The request was cancelled by a shutdown)
+            Connection ID: AE7DE5D3-63D8-4632-8930-0ABEBA52507E
+            Replication Group ID: 6F394E39-AA27-497D-9483-5DB855EB209A
+         ......................... DC01 failed test DFSREvent
+      Starting test: SysVolCheck
+         * The File Replication Service SYSVOL ready test
+         File Replication Service's SYSVOL is ready
+         ......................... DC01 passed test SysVolCheck
+      Starting test: KccEvent
+         * The KCC Event log test
+         Found no KCC errors in "Directory Service" Event log in the last 15 minutes.
+         ......................... DC01 passed test KccEvent
+      Starting test: KnowsOfRoleHolders
+         Role Schema Owner = CN=NTDS Settings,CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local
+         Role Domain Owner = CN=NTDS Settings,CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local
+         Role PDC Owner = CN=NTDS Settings,CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local
+         Role Rid Owner = CN=NTDS Settings,CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local
+         Role Infrastructure Update Owner = CN=NTDS Settings,CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local
+         ......................... DC01 passed test KnowsOfRoleHolders
+      Starting test: MachineAccount
+         Checking machine account for DC DC01 on DC DC01.
+         * SPN found :LDAP/dc01.laantillana.local/laantillana.local
+         * SPN found :LDAP/dc01.laantillana.local
+         * SPN found :LDAP/DC01
+         * SPN found :LDAP/dc01.laantillana.local/LAANTILLANA
+         * SPN found :LDAP/2268cf19-4da3-4c2b-8c61-0d02cf48331c._msdcs.laantillana.local
+         * SPN found :E3514235-4B06-11D1-AB04-00C04FC2DCD2/2268cf19-4da3-4c2b-8c61-0d02cf48331c/laantillana.local
+         * SPN found :HOST/dc01.laantillana.local/laantillana.local
+         * SPN found :HOST/dc01.laantillana.local
+         * SPN found :HOST/DC01
+         * SPN found :HOST/dc01.laantillana.local/LAANTILLANA
+         * SPN found :GC/dc01.laantillana.local/laantillana.local
+         ......................... DC01 passed test MachineAccount
+      Starting test: NCSecDesc
+         * Security Permissions check for all NC's on DC DC01.
+         * Security Permissions Check for
+           DC=ForestDnsZones,DC=laantillana,DC=local
+            (NDNC,Version 3)
+         * Security Permissions Check for
+           DC=DomainDnsZones,DC=laantillana,DC=local
+            (NDNC,Version 3)
+         * Security Permissions Check for
+           CN=Schema,CN=Configuration,DC=laantillana,DC=local
+            (Schema,Version 3)
+         * Security Permissions Check for
+           CN=Configuration,DC=laantillana,DC=local
+            (Configuration,Version 3)
+         * Security Permissions Check for
+           DC=laantillana,DC=local
+            (Domain,Version 3)
+         ......................... DC01 passed test NCSecDesc
+      Starting test: NetLogons
+         * Network Logons Privileges Check
+         Verified share \\DC01\netlogon
+         Verified share \\DC01\sysvol
+         ......................... DC01 passed test NetLogons
+      Starting test: ObjectsReplicated
+         DC01 is in domain DC=laantillana,DC=local
+         Checking for CN=DC01,OU=Domain Controllers,DC=laantillana,DC=local in domain DC=laantillana,DC=local on 1 servers
+            Object is up-to-date on all servers.
+         Checking for CN=NTDS Settings,CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local in domain CN=Configuration,DC=laantillana,DC=local on 1 servers
+            Object is up-to-date on all servers.
+         ......................... DC01 passed test ObjectsReplicated
+      Test omitted by user request: OutboundSecureChannels
+      Starting test: Replications
+         * Replications Check
+         * Replication Latency Check
+            DC=ForestDnsZones,DC=laantillana,DC=local
+               Latency information for 4 entries in the vector were ignored.
+                  4 were retired Invocations.  0 were either: read-only replicas and are not verifiably latent, or dc's no longer replicating this nc.  0 had no latency information (Win2K DC).
+            DC=DomainDnsZones,DC=laantillana,DC=local
+               Latency information for 4 entries in the vector were ignored.
+                  4 were retired Invocations.  0 were either: read-only replicas and are not verifiably latent, or dc's no longer replicating this nc.  0 had no latency information (Win2K DC).
+            CN=Schema,CN=Configuration,DC=laantillana,DC=local
+               Latency information for 4 entries in the vector were ignored.
+                  4 were retired Invocations.  0 were either: read-only replicas and are not verifiably latent, or dc's no longer replicating this nc.  0 had no latency information (Win2K DC).
+            CN=Configuration,DC=laantillana,DC=local
+               Latency information for 4 entries in the vector were ignored.
+                  4 were retired Invocations.  0 were either: read-only replicas and are not verifiably latent, or dc's no longer replicating this nc.  0 had no latency information (Win2K DC).
+            DC=laantillana,DC=local
+               Latency information for 4 entries in the vector were ignored.
+                  4 were retired Invocations.  0 were either: read-only replicas and are not verifiably latent, or dc's no longer replicating this nc.  0 had no latency information (Win2K DC).
+         ......................... DC01 passed test Replications
+      Starting test: RidManager
+         * Available RID Pool for the Domain is 16100 to 1073741823
+         * dc01.laantillana.local is the RID Master
+         * DsBind with RID Master was successful
+         * rIDAllocationPool is 4100 to 4599
+         * rIDPreviousAllocationPool is 4100 to 4599
+         * rIDNextRID: 4117
+         ......................... DC01 passed test RidManager
+      Starting test: Services
+         * Checking Service: EventSystem
+         * Checking Service: RpcSs
+         * Checking Service: NTDS
+         * Checking Service: DnsCache
+         * Checking Service: DFSR
+         * Checking Service: IsmServ
+         * Checking Service: kdc
+         * Checking Service: SamSs
+         * Checking Service: LanmanServer
+         * Checking Service: LanmanWorkstation
+         * Checking Service: w32time
+         * Checking Service: NETLOGON
+         ......................... DC01 passed test Services
+      Starting test: SystemLog
+         * The System Event log test
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   06:40:48
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   06:41:21
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   06:42:45
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   06:45:07
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   06:47:46
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   06:49:49
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   06:50:37
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   06:52:47
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   06:54:11
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   06:57:36
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   06:57:48
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   06:57:48
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:02:49
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:04:11
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000000C
+            Time Generated: 10/29/2024   07:05:29
+            Event String:
+            Time Provider NtpClient: This machine is configured to use the domain hierarchy to determine its time source, but it is the AD PDC emulator for the domain at the root of the forest, so there is no machine above it in the domain hierarchy to use as a time source. It is recommended that you either configure a reliable time service in the root domain, or manually configure the AD PDC to synchronize with an external time source. Otherwise, this machine will function as the authoritative time source in the domain hierarchy. If an external time source is not configured or used for this computer, you may choose to disable the NtpClient.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:07:50
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:08:20
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:09:00
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:11:30
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:11:32
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00000065
+            Time Generated: 10/29/2024   07:11:33
+            Event String: The assignment of application Sentinel Agent from policy Instalar SentinelOne failed.  The error was : %%1274
+         An error event occurred.  EventID: 0x00000067
+            Time Generated: 10/29/2024   07:11:33
+            Event String: The removal of the assignment of application Sentinel Agent from policy Instalar SentinelOne failed.  The error was : %%2
+         A warning event occurred.  EventID: 0x0000006C
+            Time Generated: 10/29/2024   07:11:33
+            Event String:
+            Failed to apply changes to software installation settings.  The installation of software deployed through Group Policy for this user has been delayed until the next logon because the changes must be applied before the user logon.  The error was : %%1274
+         A warning event occurred.  EventID: 0x00000458
+            Time Generated: 10/29/2024   07:11:33
+            Event String:
+            The Group Policy Client Side Extension Software Installation was unable to apply one or more settings because the changes must be processed before system startup or user logon. The system will wait for Group Policy processing to finish completely before the next startup or logon for this user, and this may result in slow startup and boot performance.
+         An error event occurred.  EventID: 0x0000271A
+            Time Generated: 10/29/2024   07:12:09
+            Event String: The server {9BA05972-F6A8-11CF-A442-00A0C90A8F39} did not register with DCOM within the required timeout.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:12:28
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         An error event occurred.  EventID: 0x00000066
+            Time Generated: 10/29/2024   07:12:29
+            Event String: The install of application Sentinel Agent from policy Instalar SentinelOne failed.  The error was : %%1612
+         An error event occurred.  EventID: 0x0000006C
+            Time Generated: 10/29/2024   07:12:29
+            Event String:
+            Failed to apply changes to software installation settings.  Software changes could not be applied.  A previous log entry with details should exist.  The error was : %%1612
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:12:29
+            Event String:
+            Windows failed to apply the Software Installation settings. Software Installation settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:15:59
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:16:32
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:19:30
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:21:33
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:23:33
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:24:21
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x000003F6
+            Time Generated: 10/29/2024   07:24:54
+            Event String: Name resolution for the name projectpc-9DSNB8u.local timed out after none of the configured DNS servers responded.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:26:35
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:29:04
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:31:36
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:33:12
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x00009016
+            Time Generated: 10/29/2024   07:34:33
+            Event String:
+            No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.
+         A warning event occurred.  EventID: 0x0000043D
+            Time Generated: 10/29/2024   07:36:37
+            Event String:
+            Windows failed to apply the Group Policy Local Users and Groups settings. Group Policy Local Users and Groups settings might have its own log file. Please click on the "More information" link.
+         ......................... DC01 failed test SystemLog
+      Test omitted by user request: Topology
+      Test omitted by user request: VerifyEnterpriseReferences
+      Starting test: VerifyReferences
+         The system object reference (serverReference) CN=DC01,OU=Domain Controllers,DC=laantillana,DC=local and backlink on
+         CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local are correct.
+         The system object reference (serverReferenceBL) CN=DC01,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=laantillana,DC=local and backlink
+         on CN=NTDS Settings,CN=DC01,CN=Servers,CN=Antillana-std,CN=Sites,CN=Configuration,DC=laantillana,DC=local are correct.
+         The system object reference (msDFSR-ComputerReferenceBL) CN=DC01,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=laantillana,DC=local and
+         backlink on CN=DC01,OU=Domain Controllers,DC=laantillana,DC=local are correct.
+         ......................... DC01 passed test VerifyReferences
+      Test omitted by user request: VerifyReplicas
+
+      Test omitted by user request: DNS
+      Test omitted by user request: DNS
+
+   Running partition tests on : ForestDnsZones
+      Starting test: CheckSDRefDom
+         ......................... ForestDnsZones passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... ForestDnsZones passed test CrossRefValidation
+
+   Running partition tests on : DomainDnsZones
+      Starting test: CheckSDRefDom
+         ......................... DomainDnsZones passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... DomainDnsZones passed test CrossRefValidation
+
+   Running partition tests on : Schema
+      Starting test: CheckSDRefDom
+         ......................... Schema passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... Schema passed test CrossRefValidation
+
+   Running partition tests on : Configuration
+      Starting test: CheckSDRefDom
+         ......................... Configuration passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... Configuration passed test CrossRefValidation
+
+   Running partition tests on : laantillana
+      Starting test: CheckSDRefDom
+         ......................... laantillana passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... laantillana passed test CrossRefValidation
+
+   Running enterprise tests on : laantillana.local
+      Test omitted by user request: DNS
+      Test omitted by user request: DNS
+      Starting test: LocatorCheck
+         GC Name: \\dc01.laantillana.local
+         Locator Flags: 0xe003f3fd
+         PDC Name: \\dc01.laantillana.local
+         Locator Flags: 0xe003f3fd
+         Time Server Name: \\dc01.laantillana.local
+         Locator Flags: 0xe003f3fd
+         Preferred Time Server Name: \\dc01.laantillana.local
+         Locator Flags: 0xe003f3fd
+         KDC Name: \\dc01.laantillana.local
+         Locator Flags: 0xe003f3fd
+         ......................... laantillana.local passed test LocatorCheck
+      Starting test: Intersite
+         Skipping site Antillana-std, this site is outside the scope provided by the command line arguments provided.
+         ......................... laantillana.local passed test Intersite
+
+C:\WINDOWS\system32>
