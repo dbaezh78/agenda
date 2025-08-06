@@ -1,142 +1,142 @@
 ﻿Extensión,Nombre,Departamento,Cargo
 1000,RECEPCION,RRHH,Recepcionista
-3124,GABRIEL CRUZ,Taller,Taller Lacsa
-3125,MIGUEL MONTERO,Taller,Taller Lacsa
-3112,GABRIEL CRUZ,Taller,Taller Lacsa
-3113,ABRAHAM,Taller,Taller Tecnicaribe
-3114,INDHIRA HERNANDEZ,Taller,0
-3115,JUAN ALEXIS MARTINEZ,Taller,Taller Lacsa
-2250,FELIX CORONADO,Tecnicaribe,0
-3117,GIOVANNY REYNOSO,Taller,Taller Lacsa
-3118,RAINER,Taller,Taller Tecnicaribe
-3120,HELEN ZORRILLA,Disabled,0
-3121,ANDY PENA,Taller,Taller Tecnicaribe
-3122,JHOANSER SANTOS,Taller,Taller Lacsa
-3123,MINIELA,Taller,Taller Tecnicaribe
-1190,GLADYS ORTIZ,Tecnologia,Gerente Tenologia
-2210,ALEJANDRO,CEO,0
-2230,CARLOS,Operaciones,0
-2212,LUIS BETANCES,Ventas,0
-2213,JOSE FAMILIA,Ventas,0
-2215,BRAYAN VALDERA,Ventas,0
-2214,WILLIAM VARGAS,Ventas,0
-1122,DON FRANCISCO (C),Direccion,0
-2236,EDUARDO ESPAILLAT,Ventas,0
-2241,ALEJANDRO CANO,Repuesto,0
-2211,MARISLEISY DELGADO,Tecnicaribe,0
-2216,LUIS METZ,Ventas,0
-2235,ALAND MENDOZA,Tecnicaribe,0
-2238,A,Tecnicaribe,0
-2225,JHORLENNY PAREDES,Ventas,0
-2234,BERTIN GARCIA,Tecnicaribe,0
-2232,KATHERINE,Tecnicaribe,0
-1156,RITA CASTILLO,Legal,0
-2217,SANTIAGO SOSA,Agricola,0
-2219,FREDDY DE OLEO,Ventas,0
-2239,PABLO,0,0
-2240,DARWIN LUNA,Repuesto,0
-2242,DANIEL MOJICA,Repuesto,0
-2243,KENIA HERRERA,Repuesto,0
-2244,JUAN DE DIOS,Repuesto,0
-2245,GARRIDO,Repuesto,0
-2246,DISPONIBLE,Repuesto,0
-2248,ODARLIN GUERREO,Repuesto,0
-2249,CAJA REPUESTO,Repuesto,0
-1158,RICHMELYS BLANCA,Compras,0
-3116,GABRIEL CRUZ,Taller,Taller Lacsa
-2247,ESTEBAN,Tecnicaribe,0
-,ADRIAN ESPINAL,#N/A,#N/A
-2251,HANDICES ESPINOSA,Repuesto,0
-2252,ANTONIO,Repuesto,0
-2253,RUBI QUEZADA,Repuesto,0
-1120,ZORAYA,Direccion,0
-1121,DON FRANCISCO ( E),Direccion,0
-1127,CONTRALORIA,Contraloria,Contralor
-1128,EMMANUEL MEDINA,Almacen,0
-1129,ROSAURIS SOTO,Contabilidad,0
-1150,JANIS REYES,Finanzas,0
-1151,ISABEL GOMEZ,Finanzas,0
-1175,JENNY DE LEON,RRHH,Gerente RRHH
-1191,FERNANDO CERDA,Tecnologia,Soporte
-1192,CARLOS BAEZ,Tecnologia,Coordinador Infraestructura
-1159,CREDITOS Y COBROS,Credito y Cobros,0
-1160,WILMINGTON DEOLEO,Operaciones,Logistica
-1126,KENIA JIMENEZ,Contraloria,0
-1142,ZACARIAS CHARLES,Contabilidad,0
-1131,DESPACHO TALLER,Taller,0
-1132,CUENTAS POR PAGAR,Contabilidad,0
-1133,LUISANNA DIAZ,Contabilidad,0
-1135,CONTROL INTERNO,Contabilidad,0
-1152,TERESA,Finanzas,0
-1154,KATHERYN MATOS,Credito y Cobros,Soporte
-1155,MARIA BELTRE,Tecnicaribe,0
-1157,COMPRAS LOCALES,Compras,0
-1005,COCINA,Visitas,0
-1161,FRANCISCO MARTINEZ,Operaciones,Logistica
-1162,LUIS FABIAN,0,Logistica
-1163,DALFRY VERAS,Operaciones,Logistica
-1166,ARELYS,Operaciones,Logistica
-1168,ENMANUEL MENDEZ,Almacen,0
-1176,JOSEPHINE ZABALA,RRHH,Coordinador RRHH
-1177,MARIA CUEVAS,RRHH,Encargada de Nomina
-1193,J,#N/A,#N/A
-1181,SERVICIOS GENERALES,Servicios Generales,Coordinador Servicios Generales
-3110,MIGUEL DIAZ,Tecnicaribe,Taller Tecnicaribe
-3111,JUAN MUNOZ,Taller,Taller Lacsa
-1125,DANIELA CUSTODIO,Contraloria,0
-2220,CARLOS CASTILLO,Ventas,0
-1167,NEURYS ESTEVEZ,Almacen,0
+1005,COCINA,Visitas,
 1101,SALON-1,Visitas,Primer piso
 1102,SALON-2,Visitas,Primer piso
 1103,SALON-3,Visitas,Primer piso
 1104,SALON-4,Visitas,"Primer piso, Repuesto"
 1105,SALON-5,Visitas,Salon de Entrenamiento 2do piso
-2237,FERNANDO,Ventas,0
-1130,SAHARA,Contabilidad,0
-1139,YARISBEL MUNOZ,Mercadeo,0
-2254,RUBI QUEZADA,Disabled,0
-2255,MARIA PERALTA,Ventas,0
-3127,EXPRESS-02,0,0
-1169,DESPACHO TIENDA,Almacen,0
-1123,LUIS,Direccion,0
+1120,ZORAYA,Direccion,
+1121,DON FRANCISCO ( E),Direccion,
+1122,DON FRANCISCO (C),Direccion,
+1123,LUIS,Direccion,
+1125,DANIELA CUSTODIO,Contraloria,
+1126,KENIA JIMENEZ,Contraloria,
+1127,CONTRALORIA,Contraloria,Contralor
+1128,EMMANUEL MEDINA,Almacen,
+1129,ROSAURIS SOTO,Contabilidad,
+1130,SAHARA,Contabilidad,
+1131,DESPACHO TALLER,Taller,
+1132,CUENTAS POR PAGAR,Contabilidad,
+1133,LUISANNA DIAZ,Contabilidad,
+1134,ROSA CUSTODIO,Contabilidad,
+1135,CONTROL INTERNO,Contabilidad,
+1137,MIGUELINA GERONIMO,Control Interno y Auditoria,
+1139,YARISBEL MUNOZ,Mercadeo,
+1140,PATRIZIA MUSA,Mercadeo,
+1141,SADIA,Contabilidad,
+1142,ZACARIAS CHARLES,Contabilidad,
+1144,JUAN CASTEL,Ventas,
+1150,JANIS REYES,Finanzas,
+1151,ISABEL GOMEZ,Finanzas,
+1152,TERESA,Finanzas,
+1154,KATHERYN MATOS,Credito y Cobros,Soporte
+1155,MARIA BELTRE,Tecnicaribe,
+1156,RITA CASTILLO,Legal,
+1157,COMPRAS LOCALES,Compras,
+1158,RICHMELYS BLANCA,Compras,
+1159,CREDITOS Y COBROS,Credito y Cobros,
+1160,WILMINGTON DEOLEO,Operaciones,Logistica
+1161,FRANCISCO MARTINEZ,Operaciones,Logistica
+1162,LUIS FABIAN,,Logistica
+1163,DALFRY VERAS,Operaciones,Logistica
+1166,ARELYS,Operaciones,Logistica
+1167,NEURYS ESTEVEZ,Almacen,
+1168,ENMANUEL MENDEZ,Almacen,
+1169,DESPACHO TIENDA,Almacen,
+1175,JENNY DE LEON,RRHH,Gerente RRHH
+1176,JOSEPHINE ZABALA,RRHH,Coordinador RRHH
+1177,MARIA CUEVAS,RRHH,Encargada de Nomina
 1178,YASMIN PEREZ,RRHH,Asistente RRHH
-1144,JUAN CASTEL,Ventas,0
-1134,ROSA CUSTODIO,Contabilidad,0
-1137,MIGUELINA GERONIMO,Control Interno y Auditoria,0
-1182,ADRIAN ESPINAL,Taller,0
-2260,GLENNI ESCOLASTICO,Ventas,Asistente Alejandro
-2228,JOAN MEJIA,Ventas,0
-1140,PATRIZIA MUSA,Mercadeo,0
-2261,ALBERT GUZMAN,Repuesto,0
-2262,FRANCIS BRETON,Ventas,0
-2263,NATIVIDAD JIMENEZ,Repuesto,0
-3130,MARY MOYA,Taller,0
-1183,RAFAEL MARMOL,Tecnicaribe,0
-1141,SADIA,Contabilidad,0
 1180,LIZMARIE PENA,Servicios Generales,Encargado Servicios Generales
-3200,LUX BAVARO,0,0
-1199,ABC,#N/A,#N/A
-1194,JEAN LUIS,Tecnologia,0
-1184,CCTV,Servicios Generales,0
+1181,SERVICIOS GENERALES,Servicios Generales,Coordinador Servicios Generales
+1182,ADRIAN ESPINAL,Taller,
+1183,RAFAEL MARMOL,Tecnicaribe,
+1184,CCTV,Servicios Generales,
+1190,GLADYS ORTIZ,Tecnologia,Gerente Tenologia
+1191,FERNANDO CERDA,Tecnologia,Soporte
+1192,CARLOS BAEZ,Tecnologia,Coordinador Infraestructura
+1193,J,#N/A,#N/A
+1194,JEAN LUIS,Tecnologia,
 1196,ADRIAN ESPINAL,#N/A,#N/A
+1199,ABC,#N/A,#N/A
+2210,ALEJANDRO,CEO,
+2211,MARISLEISY DELGADO,Tecnicaribe,
+2212,LUIS BETANCES,Ventas,
+2213,JOSE FAMILIA,Ventas,
+2214,WILLIAM VARGAS,Ventas,
+2215,BRAYAN VALDERA,Ventas,
+2216,LUIS METZ,Ventas,
+2217,SANTIAGO SOSA,Agricola,
+2219,FREDDY DE OLEO,Ventas,
+2220,CARLOS CASTILLO,Ventas,
+2225,JHORLENNY PAREDES,Ventas,
+2228,JOAN MEJIA,Ventas,
+2230,CARLOS,Operaciones,
+2232,KATHERINE,Tecnicaribe,
+2234,BERTIN GARCIA,Tecnicaribe,
+2235,ALAND MENDOZA,Tecnicaribe,
+2236,EDUARDO ESPAILLAT,Ventas,
+2237,FERNANDO,Ventas,
+2238,A,Tecnicaribe,
+2239,PABLO,,
+2240,DARWIN LUNA,Repuesto,
+2241,ALEJANDRO CANO,Repuesto,
+2242,DANIEL MOJICA,Repuesto,
+2243,KENIA HERRERA,Repuesto,
+2244,JUAN DE DIOS,Repuesto,
+2245,GARRIDO,Repuesto,
+2246,DISPONIBLE,Repuesto,
+2247,ESTEBAN,Tecnicaribe,
+2248,ODARLIN GUERREO,Repuesto,
+2249,CAJA REPUESTO,Repuesto,
+2250,FELIX CORONADO,Tecnicaribe,
+2251,HANDICES ESPINOSA,Repuesto,
+2252,ANTONIO,Repuesto,
+2253,RUBI QUEZADA,Repuesto,
+2254,RUBI QUEZADA,Disabled,
+2255,MARIA PERALTA,Ventas,
+2260,GLENNI ESCOLASTICO,Ventas,Asistente Alejandro
+2261,ALBERT GUZMAN,Repuesto,
+2262,FRANCIS BRETON,Ventas,
+2263,NATIVIDAD JIMENEZ,Repuesto,
+3110,MIGUEL DIAZ,Tecnicaribe,Taller Tecnicaribe
+3111,JUAN MUNOZ,Taller,Taller Lacsa
+3112,GABRIEL CRUZ,Taller,Taller Lacsa
+3113,ABRAHAM,Taller,Taller Tecnicaribe
+3114,INDHIRA HERNANDEZ,Taller,
+3115,JUAN ALEXIS MARTINEZ,Taller,Taller Lacsa
+3116,GABRIEL CRUZ,Taller,Taller Lacsa
+3117,GIOVANNY REYNOSO,Taller,Taller Lacsa
+3118,RAINER,Taller,Taller Tecnicaribe
+3120,HELEN ZORRILLA,Disabled,
+3121,ANDY PENA,Taller,Taller Tecnicaribe
+3122,JHOANSER SANTOS,Taller,Taller Lacsa
+3123,MINIELA,Taller,Taller Tecnicaribe
+3124,GABRIEL CRUZ,Taller,Taller Lacsa
+3125,MIGUEL MONTERO,Taller,Taller Lacsa
+3127,EXPRESS-02,,
+3130,MARY MOYA,Taller,
+3200,LUX BAVARO,,
+,ADRIAN ESPINAL,#N/A,#N/A
 8095831733,Telefono Santiago,SANTIAGO,
 1001,Maria Magdalena Diaz,Asistente administrativa,SANTIAGO - Depto. Gerencia Administrativa
-3127,Junior Ureña,,SANTIAGO - Taller Stgo
-3126,Enmanuel Estrella,,SANTIAGO - Taller Stgo
 1145,Giselle Polanco,,SANTIAGO - Administración
-1170,Luis Manuel Rodriguez,,SANTIAGO - Almacen
-1169,Jose Augusto Tavarez,,SANTIAGO - Almacen
 1153,Jaquelin Silva,,SANTIAGO - Credito y Cobros
 1156,Mairaeni Taveras,,SANTIAGO - Administración
-3128,Joselyn,,SANTIAGO
-3119,Luis Alberto Pena,,SANTIAGO - Taller Stgo
-2257,Joahn Reyes,,SANTIAGO - Ventas
-2260,Melissa Noesi,,SANTIAGO - Administración
-2258,Repuesto,Anderson Mendez,SANTIAGO - Repuestos
+1169,Jose Augusto Tavarez,,SANTIAGO - Almacen
+1170,Luis Manuel Rodriguez,,SANTIAGO - Almacen
 2254,Aneudy Paulino,,SANTIAGO - Repuestos
 2254,Francisco Duran,,SANTIAGO - Repuestos
 2255,Vicente Jimenez,,SANTIAGO - Repuestos
+2257,Joahn Reyes,,SANTIAGO - Ventas
+2258,Repuesto,Anderson Mendez,SANTIAGO - Repuestos
+2260,Melissa Noesi,,SANTIAGO - Administración
+2261,Yoedy Maldonado Ciprian,,SANTIAGO - Ventas
+2262,Reynaldo Warden,Vendedor Ambuante,SANTIAGO - Ventas
+3119,Luis Alberto Pena,,SANTIAGO - Taller Stgo
+3126,Enmanuel Estrella,,SANTIAGO - Taller Stgo
+3127,Junior Ureña,,SANTIAGO - Taller Stgo
+3128,Joselyn,,SANTIAGO
 3129,Edward Matos,,SANTIAGO - Taller Stgo
 N/A,Oscar Hernandez,Vendedor Ambuante,SANTIAGO - Ventas
-2262,Reynaldo Warden,Vendedor Ambuante,SANTIAGO - Ventas
-2261,Yoedy Maldonado Ciprian,,SANTIAGO - Ventas
